@@ -1,2 +1,2 @@
-FROM webdevops/php-apache
+FROM webdevops/php-apache:latest
 COPY . /application/code/
