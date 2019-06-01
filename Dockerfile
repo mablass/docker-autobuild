@@ -1,2 +1,2 @@
-FROM bitnami/apache:latest
-COPY . /app
+FROM webdevops/php-apache
+COPY . /application/code/
