@@ -1,34 +1,5 @@
-engine/*
-.env
-
 # PhpStorm-Project
 /.idea/
-
-# Composer
-/composer.phar
-/vendor/*
-
-# PHPUnit
-/tests/shopware
-
-# Themes
-/themes/Backend/ExtJs
-/themes/Frontend/Bare
-/themes/Frontend/Responsive
-
-# User installed plugins
-/Plugins/Community/Backend/*
-/Plugins/Community/Core/*
-/Plugins/Community/Frontend/*
-/Plugins/Local/Backend/*
-/Plugins/Local/Core/*
-/Plugins/Local/Frontend/*
-
-/custom/plugins/*
-
-# Userconfigurations
-/config.php
-/config_*.php
 
 # Caches/Proxies.php_cs
 .php_cs.cache
@@ -42,23 +13,6 @@ engine/*
 # Log files
 /var/log/*
 !/var/log/.htaccess
-
-# User provided content
-/media/archive/*
-/media/image/*
-!/media/image/thumbnail
-/media/image/thumbnail/*
-/media/music/*
-/media/pdf/*
-/media/temp/*
-!/media/temp/.htaccess
-/media/unknown/*
-/media/video/*
-/media/vector/*
-
-/files/documents/*
-!/files/documents/.htaccess
-/files/downloads/*
 
 # Snippet exports
 /snippetsExport/

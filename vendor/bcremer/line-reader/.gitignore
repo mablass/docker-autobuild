@@ -1,0 +1,8 @@
+vendor
+composer.lock
+clover.xml
+tests/testfile_*.txt
+ocular.phar
+humbug-log.json
+humbug-log.txt
+humbug.json
