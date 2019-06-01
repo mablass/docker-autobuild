@@ -1,3 +1,2 @@
-FROM node:7
-ADD app.js /app.js
-CMD node app.js
+FROM proudcommerce/docker-php72-apache-stretch
+COPY . /var/www/html
