@@ -1,2 +1,2 @@
-FROM proudcommerce/docker-php72-apache-stretch
+FROM bitnami/apache:latest
 COPY . /var/www/html
