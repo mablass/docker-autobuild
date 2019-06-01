@@ -1,0 +1,26 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: dockerautobuild
+  namespace: dockerautobuild
+  labels:
+    app: dockerautobuild
+spec:
+  selector:
+    matchLabels:
+      app: dockerautobuild
+      tier: frontend
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: dockerautobuild
+        tier: frontend
+    spec:
+      containers:
+      - image: mablass/docker-autobuild
+        name: dockerautobuild
+        ports:
+        - containerPort: 80
+          name: dockerautobuild

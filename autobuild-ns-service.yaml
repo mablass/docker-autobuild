@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: dockerautobuild
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dockerautobuild
+  namespace: dockerautobuild
+  labels:
+    app: dockerautobuild
+spec:
+  ports:
+    - port: 80
+  selector:
+    app: dockerautobuild
+    tier: frontend
+  type: LoadBalancer
